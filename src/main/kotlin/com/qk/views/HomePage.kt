@@ -1,4 +1,4 @@
-package com.qk.quark
+package com.qk.views
 
 import javafx.fxml.FXML
 import javafx.scene.control.Label
