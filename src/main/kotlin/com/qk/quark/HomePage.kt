@@ -3,7 +3,7 @@ package com.qk.quark
 import javafx.fxml.FXML
 import javafx.scene.control.Label
 
-class HelloController {
+class HomePage {
     @FXML
     private lateinit var welcomeText: Label
 
