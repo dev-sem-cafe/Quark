@@ -5,6 +5,7 @@ module com.qk.quark {
 
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.qk.quark to javafx.fxml;
+    opens com.qk.views to javafx.fxml;
     exports com.qk.quark;
+    exports com.qk.views;
 }
