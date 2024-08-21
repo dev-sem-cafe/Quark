@@ -4,8 +4,9 @@ module com.qk.quark {
     requires kotlin.stdlib;
 
     requires org.kordamp.bootstrapfx.core;
+    requires java.desktop;
 
-    opens com.qk.views to javafx.fxml;
+    opens com.qk.controller to javafx.fxml;
     exports com.qk.quark;
-    exports com.qk.views;
+    exports com.qk.controller;
 }
