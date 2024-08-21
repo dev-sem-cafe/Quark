@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.qk.controller.HomePage"
+      stylesheets="@styles.css"
+>
+    <BorderPane xmlns:fx="http://javafx.com/fxml">
+        <!-- Menu Lateral -->
+        <left>
+            <fx:include source="aside.fxml"/>
+        </left>
+
+        <!-- Conteúdo Principal -->
+        <center>
+            <VBox styleClass="bg-primary" alignment="CENTER">
+                <HBox>
+                    <Button styleClass="btn" fx:id="findFolder" text="Procurar pasta"/>
+                    <Button styleClass="btn" fx:id="findFile" text="Procurar arquivo"/>
+                </HBox>
+                <ListView styleClass="bg-primary" fx:id="fileListView"/>
+            </VBox>
+        </center>
+    </BorderPane>
+
+</VBox>
