@@ -1,10 +1,10 @@
 package com.qk.quark
 
-import com.qk.views.Home
+import com.qk.controller.Home
 import javafx.application.Application
 import javafx.stage.Stage
 
-class MainEntrance : Application() {
+class Quark : Application() {
     override fun start(stage: Stage) {
         val home = Home(stage)
         home.indexHome()
@@ -12,5 +12,5 @@ class MainEntrance : Application() {
 }
 
 fun main() {
-    Application.launch(MainEntrance::class.java)
+    Application.launch(Quark::class.java)
 }
